@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariel Pomodoro</title>
+    <link rel="stylesheet" href="_css/myPomo.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <p><img src="_imagens/tomate.png" alt="icone-pomodoro"> Pomodoro Timer</p>
+        </nav>
+
+        <div id="principal">
+            <div id="botoes">
+                <button onclick="iniciar()" id="start" class="btn">Iniciar</button>
+                <button onclick="pausar()" class="btn">Pause</button>
+                <button onclick="resetar()" class="btn">Reset</button>
+            </div>
+
+            <div id="Relogio">
+                <h2 id="min">25</h2>
+                <h2>:</h2>
+                <h2 id="seg">00</h2>
+            </div>
+        </div>
+
+        <span>
+            <header>
+                <h1>Numero de Vezes
+                    <p id="cont">
+
+                    </p>
+                </h1>
+        </header>
+        <p id="text"></p>
+        </span>
+    </main>
+
+
+
+    <script src="_js/myPomo.js"></script>
+</body>
+
+</html>

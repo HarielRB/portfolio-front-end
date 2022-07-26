@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="calc-container">
+        <div class="group-container keyboard">
+            <div class="bill-container">
+                <label for="bill-value">Bill</label>
+                <input type="number" name="bill-value" id="bill-value" class="input-container">
+            </div>
+
+
+            <div class="btn-group">
+                <label for="percent-5" class="btn-radio">
+                    <input type="radio" name="percent" id="percent-5" value="0.05" class="hidden">
+                5%
+                </label>
+                <label for="percent-10" class="btn-radio">
+                    <input type="radio" name="percent" id="percent-10" value="0.10" class="hidden" checked>
+                10%
+                </label>
+                <label for="percent-15" class="btn-radio">
+                    <input type="radio" name="percent" id="percent-15" value="0.15" class="hidden">
+                15%
+                </label>
+                <label for="percent-25" class="btn-radio">
+                    <input type="radio" name="percent" id="percent-25" value="0.25" class="hidden">
+                25%
+                </label>
+                <label for="percent-50" class="btn-radio">
+                    <input type="radio" name="percent" id="percent-50" value="0.50" class="hidden">
+                50%
+                </label>
+
+            </div>
+            <label for="group-lentgh">
+            Number of People
+                <input type="number" id="group-lentgh" class="input-container">
+            </label>
+            <button onclick="calcular()">Verificar Valor</button>
+        </div>
+
+        <div class="group-container result">
+
+            <div class="result-container">
+                <h1 class="result-text">Tip Amont <br> <span class="sub">/ person</span></h1>
+                <p id="tip-member" class="value-person">$ 0.00</p>
+            </div>
+            <div class="result-container">
+                <h1 class="result-text">Total <br><span class="sub">/ person</span></h1>
+                <p id="demo" class="value-person">$ 0.00</p>
+            </div>
+
+            <button class="reset" onclick="reset()">Reset</button>
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
