@@ -12,3 +12,5 @@
 ### 5 - Calculadora de gorjetas - criação de uma calculada que recebe um valor e traz a divisão dele para o numero de pessoas do grupo.
 
 ### 6 - Site com flexbox - desenvolvimento de um layout de site utilizando flexbox.
+
+### 7 - Cards Pokemons Sliders - criação de um slider contendo alguns pokemons e sua descrição feito na MapaDev Week
